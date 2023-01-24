@@ -3,6 +3,7 @@
  */
 package com.ipl.permutation.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -18,7 +19,7 @@ public class Team {
 
 	@Id
 	public int id;
-	
+	@Column(name="team_name")
 	public String teamName;
 	
 	public String city;

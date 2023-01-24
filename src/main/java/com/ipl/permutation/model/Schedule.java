@@ -3,8 +3,7 @@
  */
 package com.ipl.permutation.model;
 
-import java.util.Date;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -18,11 +17,14 @@ import javax.persistence.Table;
 public class Schedule {
 
 	@Id
+	@Column(name="match_id")
 	private int matchId;
 	private String teamA;
 	private String teamB;
 	private String venue;
+	@Column(name="match_day")
 	private String matchDay;
+	@Column(name="match_time")
 	private String matchTime;
 	private String result;
 	/**
